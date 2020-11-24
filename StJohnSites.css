@@ -1,8 +1,4 @@
-img {
-    margin-left: auto;
- margin-right: auto;
-height: 100% ;
-width: 100%;}
+
 h1 {
     text-align: center;
 background-color: white;
@@ -32,24 +28,36 @@ li a {
 li a:hover {
     background-color: lightblue;
 }
-table {
-    border-collapse: collapse;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid black;
-}
-.table {
-    border-collapse: collapse;
-    box-shadow: lightblue;
-    
-}
-td {
-   padding: 20px 20px;
-   background-color: lightblue;
-}
 
-thead {
-    padding: 20px 20px;
-    margin: 10px;
+.picture {
+    padding: 0;
+    margin: 4vw;
+    height: auto;
+    display: block;
+    max-width: 50%;
+    flex: 1;
+    border-radius: 5vw;
+}
+.row {
+    display: flex;
+    max-width: 100%;
+}
+.box {
+border-radius: 5vw;
+width: 50%;
+flex: 1;
+margin: 4vw;
+background-color: lightgreen;
+text-align: center;
+}
+.picture img{
+    padding: 0;
+    height: auto;
+    display: block;
+width: 100%;
+    flex: 1;
+    border-radius: 5vw;
+}
+p {
+    padding: 2px ;
 }

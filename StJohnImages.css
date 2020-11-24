@@ -34,7 +34,12 @@ li a:hover {
 }
 .picture {
     padding: 0;
-    margin: 0;
-    position: relative;
-    width: 100%;
+    margin: 5vw;
+    height: auto;
+    display: block;
+    width: 50%;
+    flex: 1;
+}
+.row {
+    display: flex;
 }

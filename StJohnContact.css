@@ -3,9 +3,16 @@ img {
  margin-right: auto;
 height: 100% ;
 width: 100%;}
+
 h1 {
     text-align: center;
 background-color: white;
+}
+h2 {
+    text-align: center;
+}
+button {
+    align-content: center;
 }
 
 body {

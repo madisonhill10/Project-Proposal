@@ -46,5 +46,100 @@
 </button>
 
 </form>
+
+  <h2 class="center">Beach Name Goes Here</h1>
+  <div class="center">
+    <img 
+      alt="Image Goes Here"
+      src="images/beach1.jpg"
+      title="beach"
+      id="img"
+    />
+  </div>
+<center>
+  <div class="center">
+    <button id="beach1" onclick="cinnamon()">Cinnamon Bay</button>
+    <button id="trunk" onclick="trunk()">Trunk Bay</button>
+    <button id="soggy" onclick="soggy()">Soggy Dollar</button>
+    <button id="caneel" onclick="caneel()">Caneel Bay</button>
+  </div>
+</center>
+
+ 
+
+<script>
+  //change image 
+  //change border color red
+ function cinnamon()
+{
+document.getElementById("img").src="images/beach1.jpg";
+document.getElementById("img").style.borderColor= "red";
+document.getElementById("beach1").style.backgroundColor="silver";
+document.getElementById("trunk").style.backgroundColor="white";
+document.getElementById("soggy").style.backgroundColor="white";
+document.getElementById("caneel").style.backgroundColor="white";
+document.querySelector("h2").innerText = "Cinnamon Bay"
+}
+//change image penguin
+//change border color blue
+function trunk()
+{
+document.getElementById("img").src="images/beach5.jpg";
+document.getElementById("img").style.borderColor= "blue";
+document.getElementById("beach1").style.backgroundColor="white";
+document.getElementById("trunk").style.backgroundColor="silver";
+document.getElementById("soggy").style.backgroundColor="white";
+document.getElementById("caneel").style.backgroundColor="white";
+document.querySelector("h2").innerText = "Trunk Bay"
+}
+//change image snowleopard
+//change border color green
+function soggy()
+{
+document.getElementById("img").src="images/beach7.jpg";
+document.getElementById("img").style.borderColor= "green";
+document.getElementById("beach1").style.backgroundColor="white";
+document.getElementById("trunk").style.backgroundColor="white";
+document.getElementById("soggy").style.backgroundColor="silver";
+document.getElementById("caneel").style.backgroundColor="white";
+document.querySelector("h2").innerText = "Soggy Dollar"
+}
+//change image lynx
+//change border color yellow
+function caneel()
+{
+document.getElementById("img").src="images/beach9.jpg";
+document.getElementById("img").style.borderColor= "yellow";
+document.getElementById("beach1").style.backgroundColor="white";
+document.getElementById("trunk").style.backgroundColor="white";
+document.getElementById("soggy").style.backgroundColor="white";
+document.getElementById("caneel").style.backgroundColor="silver";
+document.querySelector("h2").innerText = "Caneel Bay"
+}
+
+//change size on mouse over
+function imagebig()
+{
+document.getElementById("img").height=  document.getElementById("img").height * 1.75;
+}
+//resize
+
+function imagenormal ()
+{
+document.getElementById("img").height=  document.getElementById("img").height /1.75
+
+}
+
+document.getElementById("img").onmouseover=imagebig
+document.getElementById("img").onmouseout=imagenormal
+
+
+document.getElementById("beach1").onclick= cinnamon;
+document.getElementById("trunk").onclick= trunk;
+document.getElementById("soggy").onclick= soggy;
+document.getElementById("caneel").onclick= caneel;
+
+
+</script>
 </body>
 </html>

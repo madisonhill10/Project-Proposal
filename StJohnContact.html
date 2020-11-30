@@ -26,11 +26,11 @@
     <p>
       Hi! My name is Maddy Hill and I have created this page out of my love for St. John. I hope you enjoy reading the pages and viewing the pictures! If you have any questions regarding St. John do not hesitiate to reach out.  
     </p>
-    <form action="mailto:maddy.hill10@gmail.com" method="POST">
+    <form  id="form" name="myForm" action="mailto:maddy.hill10@gmail.com" method="POST" onsubmit=return validateForm()>
         
 <label for="Name"> First Name</label>
-<input type=”text” size=”30″ name=”VisitorName”><br><br>
-<label for="Last Name"> Last Name</label>
+<input type=”text” size=”30″ name=”fname”><br><br>
+<label for="Last-Name"> Last Name</label>
 <input type=”text” size=”30″ name=”VisitorName”><br><br>
 
     <textarea 
@@ -41,6 +41,9 @@
   rows="3"
     ></textarea>
   </div>
+  <div>
+    <p id="alert">Fill out correctly, please. </p>
+  </div>
 
 </textarea><br><br>
 <button> submit
@@ -48,7 +51,7 @@
 
 </form>
 
-  <h2 class="center">Beach Name Goes Here</h1>
+  <h2 class="center">Click the buttons below to see what beach is shown!</h1>
   <div class="center">
     <img 
       alt="Image Goes Here"
@@ -69,6 +72,22 @@
  
 
 <script>
+  //alert for no name enetred
+  function validateForm() {
+const myForm=document.querySelector("form");
+let notice= document.getElementById("notice");
+if (myForm["name"].value.length==0){
+  notice.style.display="block";
+}
+if (myForm["Last-Name"].value.length==0){
+  notice.style.display="block";
+}
+if (myForm["email"].value.length==0){
+  notice.style.display="block";
+}
+  }
+  document.getElementById("form").onclick=validateForm;
+
   //change image 
   //change border color red
  function cinnamon()
